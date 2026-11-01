@@ -1,0 +1,45 @@
+---
+title: Observability in production
+description: 'Field guide chapter: Observability in production'
+---
+
+Evals tell you how the system performs on defined checks. Observability helps you explain behavior in the messiness of live use.
+
+## Observe the full workflow
+
+Record user journey, trace and span hierarchy, retrieval and tool results, costs, latency, retries, errors, feedback, and version identifiers. A model response may look fine while the system took the wrong action.
+
+## Find the concentration of failures
+
+Slice quality by task type, input length, customer cohort, tool, data source, and release version. A small overall change can conceal a serious problem in a high-value segment.
+
+## Create an incident rhythm
+
+Assign owners to alerts, incident logs, review of failure samples, threshold breaches, and post-fix regression tests. Monitoring is valuable only when it changes product decisions or engineering work.
+
+## Try it
+
+Define a Scout dashboard: verified shortlist rate, unsupported-claim rate, tool errors, human corrections, cost per accepted shortlist, and p95 elapsed time.
+
+Read further: Gupta, AI Observability: https://www.news.aakashg.com/p/ai-pm-observability
+
+
+
+## Source boundary
+
+Gupta and Khan’s public excerpt motivates trace-based diagnosis rather than vague reports that the AI seems wrong. Its implementation section is paid and was unavailable. The following operational plan is original handbook guidance.
+
+## Minimum trace contract — instructional synthesis
+
+Store a request ID, timestamps, task type, application and prompt versions, tool status, evidence identifiers, output state, review outcome and cost/latency measurements. Capture only the input content needed for diagnosis under the product’s privacy policy; redact secrets, restrict access and set retention periods. Do not assume private model reasoning is available or required.
+
+## Incident exercise — illustrative
+
+After a release, Scout’s empty-result rate rises. Compare successful empty searches with failed tool requests. If timeouts are being labeled as no matches, fix the error-state mapping and add S03 from the [evaluation chapter](/book/chapter-10) to the regression set. A faster model would not repair that state error.
+
+Define an alert owner, a response time and a rollback mechanism. Track accepted outcomes alongside latency and cost; improving response speed while reducing useful results is not success.
+
+
+---
+
+[All chapters](/book/index) · [Learning path](/course/index)

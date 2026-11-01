@@ -1,0 +1,23 @@
+---
+title: AI PM Glossary
+description: Core terms for AI product management
+---
+
+| Term | Working definition |
+| --- | --- |
+| Agent | Model running inside an execution system with tools and a control loop |
+| Harness | Instructions, context, skills, memory, permissions, tools, checks and loop around the model |
+| Trace | A recorded execution including inputs, model calls, tools and outputs |
+| Span | A timed unit of work nested within a trace |
+| Open coding | Recording informal notes about individual observed failures |
+| Axial coding | Grouping observations into specific recurring categories |
+| Code eval | Deterministic assertion of machine-checkable behavior |
+| LLM judge | Model used to label a behavior against an explicit rubric |
+| TPR | True positives / all actual positive cases; failure-detection sensitivity when positive means failure |
+| TNR | True negatives / all actual negative cases; specificity |
+| RAG | Retrieval-augmented generation: supplying retrieved material to the model |
+| Performance envelope | Multiple simultaneous requirements for outcome quality, latency, cost and risk |
+| Human handoff | Escalating a task to an authorized person when the system should not proceed |
+| Hard stop | Rule enforced in code or permissions rather than merely requested in a prompt |
+
+Be precise about whether a positive label means **failure** or **pass** before calculating TPR and TNR.

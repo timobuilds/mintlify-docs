@@ -1,0 +1,92 @@
+- id: SRC-001
+  title: 'Model PM: The Complete Guide'
+  authors: Aakash Gupta
+  date: '2026-10-15'
+  url: https://www.news.aakashg.com/p/model-pm
+  domain: Model PM roles and distinctions
+  last_reviewed: '2026-11-01'
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: verified_public_excerpt
+  access_scope: Public role definitions before the subscription boundary.
+- id: SRC-002
+  title: 'AI Evals: Step by Step'
+  authors: Hamel Husain; Shreya Shankar; Aakash Gupta
+  date: '2026-05-05'
+  url: https://www.aakashg.com/hamel-shreya-ai-evals-step-by-step/
+  domain: Application-specific AI evaluations
+  last_reviewed: '2026-11-01'
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: verified_public_transcript
+  access_scope: Public interview transcript, including error analysis and judge validation.
+- id: SRC-003
+  title: 'AI PRDs: Everything You Need to Know'
+  authors: Aakash Gupta
+  date: '2025-08-16'
+  url: https://www.news.aakashg.com/p/ai-prd
+  domain: AI requirements
+  last_reviewed: '2026-11-01'
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: verified_public_excerpt
+  access_scope: Public introduction and specification rationale; paid template unavailable.
+- id: SRC-004
+  title: 'AI PM''s Ultimate Guide: Observability'
+  authors: Aakash Gupta; Aman Khan
+  date: '2025-09-07'
+  url: https://www.news.aakashg.com/p/ai-pm-observability
+  domain: Production observability
+  last_reviewed: '2026-11-01'
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: verified_public_excerpt
+  access_scope: Public observability rationale; paid implementation guide unavailable.
+- id: SRC-005
+  title: How to Design with AI — Xinran Ma
+  authors: Aakash Gupta; Xinran Ma
+  date: '2026-02-21'
+  url: https://www.news.aakashg.com/p/xinran-ma-podcast
+  domain: AI product design
+  last_reviewed: null
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: deferred_unverified
+  access_scope: Carried forward as a reference lead from the recovered archive; not
+    retrieved in this release. Not used to support foundation claims.
+- id: SRC-006
+  title: 'AI Customer Intelligence: Complete Guide'
+  authors: Aakash Gupta
+  date: '2025-10-14'
+  url: https://www.news.aakashg.com/p/ai-customer-intelligence
+  domain: Customer insight systems
+  last_reviewed: null
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: deferred_unverified
+  access_scope: Carried forward as a reference lead from the recovered archive; not
+    retrieved in this release. Not used to support foundation claims.
+- id: SRC-007
+  title: 'Harness Engineering: Complete Guide'
+  authors: Aakash Gupta
+  date: '2026-10-01'
+  url: https://www.news.aakashg.com/p/harness-engineering
+  domain: Agent harness architecture
+  last_reviewed: null
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: deferred_unverified
+  access_scope: Carried forward as a reference lead from the recovered archive; not
+    retrieved in this release. Not used to support foundation claims.
+- id: SRC-008
+  title: 'Context Engineering: Ultimate Guide'
+  authors: Aakash Gupta; Miqdad Jaffer
+  date: '2025-11-26'
+  url: https://www.news.aakashg.com/p/context-engineering
+  domain: Context engineering
+  last_reviewed: null
+  usage: Original teaching synthesis only; link and attribute; do not republish original
+    paid content
+  status: deferred_unverified
+  access_scope: Carried forward as a reference lead from the recovered archive; not
+    retrieved in this release. Not used to support foundation claims.
