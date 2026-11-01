@@ -1,0 +1,103 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "The AI PM Handbook",
+  "description": "From model capabilities to reliable, valuable AI products",
+  "colors": {
+    "primary": "#2258d8",
+    "light": "#2258d8",
+    "dark": "#89adff"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Start here",
+        "groups": [
+          {
+            "group": "Start here",
+            "pages": [
+              "index",
+              "getting-started/what-is-ai-pm",
+              "getting-started/operating-cycle",
+              "getting-started/how-to-use"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Book",
+        "groups": [
+          {
+            "group": "Book",
+            "pages": [
+              "book/index",
+              "book/chapter-01",
+              "book/chapter-03",
+              "book/chapter-04",
+              "book/chapter-10",
+              "book/chapter-11",
+              "book/chapter-12"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Course",
+        "groups": [
+          {
+            "group": "Course",
+            "pages": [
+              "course/index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Practice",
+        "groups": [
+          {
+            "group": "Practice",
+            "pages": [
+              "practice/index",
+              "practice/templates",
+              "practice/template-01",
+              "practice/template-02",
+              "practice/template-04",
+              "practice/template-05"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Library",
+        "groups": [
+          {
+            "group": "Library",
+            "pages": [
+              "library/index",
+              "library/glossary",
+              "library/sources/src-001",
+              "library/sources/src-002",
+              "library/sources/src-003",
+              "library/sources/src-004",
+              "library/sources/src-005",
+              "library/sources/src-006",
+              "library/sources/src-007",
+              "library/sources/src-008",
+              "about/editorial-policy",
+              "about/changelog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Edit on GitHub",
+        "href": "https://github.com/timobuilds/mintlify-docs/tree/ai-pm-handbook-foundation/ai-pm-handbook"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+---
+title: Define the economics
+description: 'Field guide chapter: Define the economics'
+---
+
+AI product strategy requires a definition of value that survives contact with usage, latency, token bills, and the cost of human correction.
+
+## Count completed jobs, not generated outputs
+
+The meaningful denominator is successful customer outcomes. A cheap response that requires manual rework can be costlier than an expensive answer that resolves the task. Estimate benefit per successful job, operational costs, review cost, and expected error losses.
+
+## Map the performance envelope
+
+Avoid maximizing accuracy alone. Specify minimum task success, acceptable latency, cost per completed task, permitted human review, and unacceptable safety failures. Explicit trade-offs prevent teams from optimizing the wrong metric.
+
+## Choose build, buy, or compose
+
+A stronger model is not automatically the best investment. Better retrieval, tools, interface constraints, or a smaller deterministic workflow may create more value. Identify what truly differentiates the product: proprietary context, workflow integration, relationships, or domain-specific evaluations.
+
+## Try it
+
+For the Scout, compare the cost of an agent-produced shortlist with an agent-assisted human workflow. Include time checking sources, false-positive listings, and follow-up communication. Set three measurable release thresholds.
+
+Teaching basis: original handbook synthesis. The cost example below is illustrative, not a sourced result.
+
+
+
+## Worked example — illustrative assumptions
+
+Suppose a manual shortlist costs 30 minutes at an internal planning rate of $40/hour: $20 per completed job. An assisted attempt costs $0.50 in computing and five minutes of review ($3.33). If 80% of attempts produce accepted shortlists, the attempt-and-review cost per acceptance is approximately $3.83 / 0.80 = $4.79. This excludes failed-task recovery, integration and support.
+
+If the remaining 20% require the full manual workflow, average cost per requested job is $3.83 + 0.20 × $20 = $7.83. Estimated savings are $12.17 per requested job before fixed costs. These two denominators answer different questions; do not present either as measured ROI.
+
+**Exercise:** replace every assumption with an observed range. Recalculate for 50% acceptance and 15 minutes of review. What would make the pilot uneconomic?
+
+
+---
+
+[All chapters](/book/index) · [Learning path](/course/index)

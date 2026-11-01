@@ -1,0 +1,31 @@
+---
+title: Evaluation starts with traces
+description: Turn observed failures into useful tests.
+---
+
+## Source-reported method
+
+Husain and Shankar recommend inspecting real executions before choosing metrics. Write free-form failure notes, then group them into specific categories. Use counts and product impact to prioritize. Start with code checks where the rule is deterministic; use a model judge for judgments that need semantic interpretation. Their example review of roughly 100 traces is a discovery exercise, not a universal sample-size requirement. See [SRC-002](/library/sources/src-002).
+
+## Worked exercise — original, illustrative
+
+Scout is asked for properties below $700,000 with parking. Review these fabricated outcomes against the [PRD](/book/chapter-04):
+
+| Trace | Observed behavior | Reviewer note | Candidate check |
+| --- | --- | --- | --- |
+| S01 | Recommends a $710,000 property | Budget rule violated | Numeric comparison |
+| S02 | Says parking is included; source is silent | Missing evidence became a fact | Evidence review |
+| S03 | Search times out; says “no matches” | Failure was confused with an empty result | Tool status versus UI state |
+| S04 | Returns an eligible property with source and unknown parking | Uncertainty preserved | Pass for these rules |
+
+There are three failing traces out of four in this deliberately difficult teaching set. That 75% is not a production failure estimate. A trace may violate multiple rules; counting issue labels and counting failed traces produce different denominators.
+
+## Build a small evaluation set
+
+Record the requirement ID, input, available evidence, expected behavior, actual behavior and reviewer decision. Keep development examples separate from a held-out set. Record how examples were sampled and which user segments are absent. Version the dataset with the application configuration.
+
+After a change, rerun all checks, including those unrelated to the intended fix. If a new error appears, keep the original trace and add a regression example after review. Use the [workbook](/practice/template-04).
+
+## Completion criterion
+
+Another reviewer should be able to reproduce your labels. If reviewers disagree, clarify the requirement or record the unresolved ambiguity; do not hide disagreement inside a single average score.

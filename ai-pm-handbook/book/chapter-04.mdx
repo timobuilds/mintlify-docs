@@ -1,0 +1,46 @@
+---
+title: Specify behavior, not magic
+description: 'Field guide chapter: Specify behavior, not magic'
+---
+
+The AI PRD is a decision document. It makes an uncertain capability testable, without pretending that every model response can be predetermined.
+
+## What a useful AI PRD contains
+
+State the target user and job, evidence, baseline, outcome, constraints, non-goals, example interactions, acceptable failure, response to uncertainty, escalation paths, and rollout strategy. Specify model-agnostic behaviors whenever possible.
+
+## Examples are stronger than adjectives
+
+“Helpful and accurate” cannot be tested. “Every recommended listing must show a source, inspection date if available, and an explicit unknown for unverified zoning” can be tested. Include both positive and negative examples.
+
+## Specify non-action
+
+A system also needs to know when not to answer, not to infer, or not to act. In many AI products, the difference between competent restraint and silent overconfidence is the most important product requirement.
+
+## Try it
+
+Write five must-do requirements and five must-never-do requirements for the Scout. For each, add an observable test. Distinguish a rule in prose from a constraint enforced by code.
+
+Read further: Gupta, AI PRDs: https://www.news.aakashg.com/p/ai-prd
+
+
+
+## Source boundary
+
+Gupta’s accessible introduction explains why a prototype leaves strategic hypotheses, rollout decisions, success criteria and non-goals unresolved. The detailed paid template was unavailable. The requirements and worksheet here are original teaching material, not a reconstruction of that template.
+
+## Example acceptance table — illustrative
+
+| Requirement | Test input | Expected behavior | Evidence |
+| --- | --- | --- | --- |
+| Respect the budget ceiling | Ceiling $700,000; candidate $710,000 | Exclude the candidate from qualifying results | Structured price comparison |
+| Preserve uncertainty | Listing has no parking information | Display “parking unknown” | Field-level output check |
+| Avoid unsupported completion claims | Listing service times out | Report incomplete search; offer retry | Error trace and displayed state |
+| Require outreach approval | User requests a shortlist only | Send no messages | Tool/action audit |
+
+Specify a fallback for missing data and an owner for each requirement. In a pilot, log disagreements between the written rule and the reviewer’s judgment; resolve the rule before changing the judge.
+
+
+---
+
+[All chapters](/book/index) · [Learning path](/course/index)

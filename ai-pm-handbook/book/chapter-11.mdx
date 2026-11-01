@@ -1,0 +1,29 @@
+---
+title: Build trustworthy judges
+description: Validate the measurement before relying on it.
+---
+
+## Source-reported guidance
+
+Husain and Shankar favor an explicit binary rubric for a specific failure. Compare judge predictions with human labels and examine failure detection and correct rejection separately. Aggregate agreement can conceal a judge that misses failures. Their interview flags held-out validation as necessary further work. See [SRC-002](/library/sources/src-002).
+
+## Worked calculation — original, illustrative
+
+Define **positive = failure**. In a constructed set of 40 examples, human reviewers label 10 failures and 30 passes. The judge catches eight failures, misses two, falsely flags three passes and correctly accepts 27.
+
+| | Human failure | Human pass |
+| --- | --- | --- |
+| Judge flags failure | 8 true positives | 3 false positives |
+| Judge reports pass | 2 false negatives | 27 true negatives |
+
+- Failure detection (TPR): 8 / 10 = 80%.
+- Correct rejection (TNR): 27 / 30 = 90%.
+- Overall agreement: 35 / 40 = 87.5%.
+
+These figures are arithmetic examples, not recommended release thresholds. Ten actual failures provide little information about rare failure types. Report the counts alongside the percentages and describe what the sample represents.
+
+## Decision exercise
+
+If the missed failures concern unsupported parking claims, inspect whether the judge received the underlying source. If the evidence was missing, a more elaborate prompt may not solve the problem. If reviewers disagree about whether an omission matters, resolve the product rule first.
+
+Save rubric version, judge model/configuration, dataset version and human labels. Keep examples used to tune the rubric out of final validation. Decide the acceptable consequences of missed failures and false alarms before using the judge as a release gate.
